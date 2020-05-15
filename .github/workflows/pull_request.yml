@@ -12,7 +12,7 @@ jobs:
         uses: grandcolline/golang-github-actions@v1.1.0
         with:
           run: vet
-          token: ${{ secrets.ACTIONS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
   shadow:
     name: Shadow
@@ -23,7 +23,7 @@ jobs:
         uses: grandcolline/golang-github-actions@v1.1.0
         with:
           run: shadow
-          token: ${{ secrets.ACTIONS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
   imports:
     name: Imports
@@ -34,4 +34,4 @@ jobs:
         uses: grandcolline/golang-github-actions@v1.1.0
         with:
           run: imports
-          token: ${{ secrets.ACTIONS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}

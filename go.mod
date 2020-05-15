@@ -1,1 +1,3 @@
-module "test-actions"
+module test-actions
+
+go 1.14
